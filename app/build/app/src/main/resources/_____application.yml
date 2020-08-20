@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  profiles: docker-compose
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db:3306/test_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: docker
+    password: pass
+  jpa:
+    database: test_db
+    hibernate:
+      ddl-auto: none
+#security:
+#    basic:
+#        enabled: false
