@@ -1,4 +1,4 @@
- 
+package SpringBootSecu; 
 import java.io.Serializable;
  
 import javax.persistence.Column;
